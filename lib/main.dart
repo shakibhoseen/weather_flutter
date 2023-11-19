@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:weather_flutter/bloc/weather_bloc_bloc.dart';
 import 'package:weather_flutter/screens/home_screen.dart';
-import 'package:weather_flutter/utils/position.dart';
+import 'package:weather_flutter/utils/util.dart';
 
 
 void main() {

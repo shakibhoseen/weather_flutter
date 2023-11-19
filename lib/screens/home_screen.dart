@@ -5,7 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import 'package:weather_flutter/bloc/weather_bloc_bloc.dart';
-import 'package:weather_flutter/utils/position.dart';
+import 'package:weather_flutter/utils/util.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -67,9 +67,9 @@ class HomeScreen extends StatelessWidget {
                               const SizedBox(
                                 height: 8,
                               ),
-                              const Text(
-                                'Good Morning',
-                                style: TextStyle(
+                               Text(
+                                getGreeting(),
+                                style: const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
                                     fontSize: 25),
